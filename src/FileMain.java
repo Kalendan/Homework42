@@ -1,9 +1,9 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 
-public class Exceptions1 {
+public class FileMain {
     public static void main(String[] args) {
         try {
             File file = new File("Numbers.txt");
