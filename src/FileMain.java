@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 
 public class FileMain {
     public static void main(String[] args) {
@@ -9,9 +6,9 @@ public class FileMain {
             File file = new File("Numbers.txt");
             FileReader fileReader = new FileReader(String.valueOf(file));
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-            Integer integer = bufferedReader.readLine();
+
             System.out.println(bufferedReader.readLine());
-        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
             System.out.println("no found");
 
         }
